@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993785425872",
+    "project_id": "domessanger",
+    "storage_bucket": "domessanger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993785425872:android:f9bfaf844be49285b713d5",
+        "android_client_info": {
+          "package_name": "com.example.domessanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993785425872-pvse66at41q90idn00a0hgtehr3m9g7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATDO2TA3FBq_gzt9_SppmIXQ0MZNdadZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993785425872-pvse66at41q90idn00a0hgtehr3m9g7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

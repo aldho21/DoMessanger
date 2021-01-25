@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".HomeActivity"
+    android:theme="@style/Theme.AppCompat">
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnWelcomeR"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shapebtn"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat">
+
+    </Button>
+    <Button
+        android:id="@+id/btnWelcomeL"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:background="@drawable/shapebtn"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat">
+
+    </Button>
+
+</LinearLayout>

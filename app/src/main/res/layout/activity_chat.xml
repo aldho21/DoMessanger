@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barLayoutChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileChat"
+                android:src="@drawable/profile"
+                android:layout_width="32dp"
+                android:layout_height="32dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:id="@+id/username_chat"
+                android:textSize="18sp"
+                android:layout_marginLeft="26dp"
+                android:textColor="@color/white"
+                android:text="@string/username"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chat"
+        android:layout_below="@id/barLayoutChat"
+        android:layout_above="@id/relative_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relative_bottom">
+        <ImageView
+            android:id="@+id/attch_img_file"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_attach_file"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+        </ImageView>
+        <EditText
+            android:id="@+id/tMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:hint="Write Message..."
+            android:layout_toRightOf="@+id/attch_img_file"
+            android:layout_toLeftOf="@+id/btn_send_message"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp">
+
+        </EditText>
+        <ImageView
+            android:id="@+id/btn_send_message"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_action_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+        </ImageView>
+
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
